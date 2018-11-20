@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		@media (max-width: 600px){
+			#header{
+				flex-wrap: wrap;
+			}
+			ul{
+				max-width: 1200px
+			}
+		}
+		#header{
+			display:flex;
+			justify-content: space-around;
+			align-items: center;
+	    	position:fixed;
+			top: 0;
+			width:100%;
+			height: 144px;
+			z-index:999;
+	        background-color: white;
+		}
+
+		ul{
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: space-around;
+		    width:360px;
+		    flex-wrap: nowrap;
+		 }
+		#fixednav{
+		}
+		#header-img{
+			width:120px;
+			height:120px;
+		}
+		main{
+			padding-top: 144px;
+		}
+		.fixed {
+	    	position:fixed;
+		}
+		.absolute {
+	    	position:absolute;
+		}
+		#how-it-works{
+			display: flex;
+  			justify-content: center;
+		}
+		#newsletter{
+			margin-top: 60px;
+			display: flex;
+  			justify-content: center;
+		}
+		.btn {
+			padding: 0 20px;
+			height: 40px;
+			font-size: 1em;
+			font-weight: 900;
+			text-transform: uppercase;
+			border: 3px black solid;
+			border-radius: 2px;
+			background: transparent;
+			cursor: pointer;
+		    background-color: #f1c40f;
+		}
+	</style>
+</head>
+<body>
+	<header id="header" class="fixed">
+		<img src="logo.jpg" alt="" id="header-img">
+		<nav id="nav-bar">
+			<ul id="fixednav">
+				<li><a href="#features" target="_blank" class="nav-link">Features</a></li>
+				<li><a href="#how-it-works" target="_blank" class="nav-link">How It Works</a></li>
+				<li><a href="#pricing" target="_blank" class="nav-link">Pricing</a></li>
+			</ul>
+		</nav>
+	</header>		
+	<main>
+		<section id="how-it-works">
+			<iframe id="video" width="720" height="480" src="https://www.youtube-nocookie.com/embed/OGx0XfUW8co?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen>
+			</iframe>
+		</section>
+		<section id="features">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed nisi vestibulum, tempor augue id, convallis lacus. Nullam ut nibh id lectus pharetra ultrices in non enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque auctor ipsum non tortor mattis, ut auctor tellus scelerisque. In felis mauris, tristique dignissim sagittis congue, tempus vel erat. Duis pharetra maximus purus in faucibus. Maecenas eget turpis magna. Aliquam ac bibendum massa. Aenean id vulputate magna, in pharetra neque.
+
+			Etiam vel felis interdum, tempus ligula quis, aliquam massa. Maecenas sed gravida tellus. Quisque nunc ex, cursus in efficitur a, feugiat nec quam. Sed facilisis eros ut molestie ullamcorper. Maecenas laoreet vulputate sapien, ut sollicitudin ex luctus vitae. In ac gravida diam, at tempus sem. Vestibulum quis eros dui. Nulla tempor metus ac libero tincidunt, vel laoreet eros condimentum. Nunc vitae elementum metus. Curabitur et auctor dui, blandit dapibus neque. Duis euismod porta ipsum, quis fringilla leo tristique ut. Vestibulum elementum, nibh ut tempor consectetur, nunc ipsum dictum velit, ac egestas arcu urna vel nulla. Nulla facilisi.
+
+		</section>
+		<section id="pricing">
+			Donec sit amet augue tincidunt, accumsan neque eu, vehicula erat. Maecenas ac lectus purus. Duis sollicitudin id ipsum at pharetra. Sed ultricies placerat libero vel mollis. Sed vitae justo tellus. Praesent convallis sem vitae metus vestibulum tristique. Quisque ullamcorper, odio et efficitur placerat, orci odio hendrerit ipsum, non aliquet ipsum magna in lorem.
+
+			Etiam consequat varius consequat. Donec massa quam, vulputate id tincidunt et, aliquet eget erat. Fusce velit ante, pharetra in rutrum in, ornare at eros. Ut ultrices felis vel dolor tempor, vitae lobortis nibh tincidunt. Ut id sapien turpis. Fusce nec gravida lectus, iaculis gravida augue. Phasellus a varius mi. Morbi molestie mattis dui et mattis. Pellentesque ac dui finibus, dignissim orci eu, condimentum elit. Ut laoreet justo at dui molestie ullamcorper. Aliquam vel maximus tortor. Morbi et massa diam. Aliquam eu tortor sit amet massa gravida sodales. Nam ipsum enim, feugiat quis laoreet ac, congue ac sem.
+		</section>
+		<section id="newsletter">	
+			<form id="form" action="https://www.freecodecamp.com/email-submit">
+				<input type="email" name="email" id="email" placeholder="Enter your email address" required></input>
+				<input type="submit" id="submit" value="Get Started" class="btn">
+			</form>
+		</section>
+	</main>
+</body>
+</html>
