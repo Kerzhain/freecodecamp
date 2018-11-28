@@ -4,19 +4,62 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-		
+	html,body{
 
+	}
+	#navbar{
+		display:flex;
+		flex-direction: column;
+		position:fixed;
+		border-color:black;
+		border:1px solid;
+		width:300px;
+		height: 600px;
+		align-items:center;
+		justify-content: space-around;
+	}
+	#main-doc{
+	    background-color: #ffffff;
+    	font-family: 'Open Sans',Arial,sans-serif;
+		position: absolute;
+		margin-left:310px;
+		padding:20px;
+		margin-bottom:110px;
+	}
 
+	@media only screen and (max-width: 815px) {
+		#navbar{
+			display:flex;
+			flex-direction: column;
+			position:absolute;
+			border-color:black;
+			border:1px solid;
+			width:100%;
+			height: 200px;
+			align-items:center;
+			justify-content: space-around;
+			z-index: 1;
+		}
+		#main-doc{
+		    background-color: #ffffff;
+	    	font-family: 'Open Sans',Arial,sans-serif;
+			position: absolute;
+			margin-left:0px;
+			padding:20px;
+			margin-bottom:110px;
+			margin-top:200px;
+		}
+	}
 	</style>
 </head>
 <body>
 	<nav id="navbar">
 		<header>technical documentation</header>
-		<a href="#javascript" id="nav-link">javascript</a>
-		<a href="#html5" id="nav-link">html5</a>
-		<a href="#css3" id="nav-link">css3</a>
-		<a href="#dotnet" id="nav-link">dotnet</a>
-		<a href="#python" id="nav-link">python</a>
+		<a href="#javascript" class="nav-link">javascript</a>
+		<a href="#html5" class="nav-link">html5</a>
+		<a href="#css3" class="nav-link">css3</a>
+		<a href="#dotnet" class="nav-link">dotnet</a>
+		<a href="#python" class="nav-link">python</a>
 
 	</nav>
 	<main id="main-doc">
