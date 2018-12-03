@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	html,body{
+
+	}
+	#navbar{
+		display:flex;
+		flex-direction: column;
+		position:fixed;
+		border-color:black;
+		border:1px solid;
+		width:300px;
+		height: 600px;
+		align-items:center;
+		justify-content: space-around;
+	}
+	#main-doc{
+	    background-color: #ffffff;
+    	font-family: 'Open Sans',Arial,sans-serif;
+		position: absolute;
+		margin-left:310px;
+		padding:20px;
+		margin-bottom:110px;
+	}
+
+	@media only screen and (max-width: 815px) {
+		#navbar{
+			display:flex;
+			flex-direction: column;
+			position:absolute;
+			border-color:black;
+			border:1px solid;
+			width:100%;
+			height: 200px;
+			align-items:center;
+			justify-content: space-around;
+			z-index: 1;
+		}
+		#main-doc{
+		    background-color: #ffffff;
+	    	font-family: 'Open Sans',Arial,sans-serif;
+			position: absolute;
+			margin-left:0px;
+			padding:20px;
+			margin-bottom:110px;
+			margin-top:200px;
+		}
+	}
+	</style>
+</head>
+<body>
+	<nav id="navbar">
+		<header>technical documentation</header>
+		<a href="#javascript" class="nav-link">javascript</a>
+		<a href="#html5" class="nav-link">html5</a>
+		<a href="#css3" class="nav-link">css3</a>
+		<a href="#dotnet" class="nav-link">dotnet</a>
+		<a href="#python" class="nav-link">python</a>
+
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="javascript">
+			<header>javascript</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<ul>
+					<li>li 1</li>
+					<li>li 2</li>
+					<li>li 3</li>
+					<li>li 4</li>
+					<li>li 5</li>
+				</ul>
+				<code>some code samples</code>
+		</section>
+
+		<section class="main-section" id="html5">
+			<header>html5</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<ul>
+					<li>li 1</li>
+					<li>li 2</li>
+					<li>li 3</li>
+					<li>li 4</li>
+					<li>li 5</li>
+				</ul>
+				<code>some code samples</code>
+		</section>
+
+		<section class="main-section" id="css3">
+			<header>css3</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<ul>
+					<li>li 1</li>
+					<li>li 2</li>
+					<li>li 3</li>
+					<li>li 4</li>
+					<li>li 5</li>
+				</ul>
+				<code>some code samples</code>
+		</section>
+
+		<section class="main-section" id="dotnet">
+			<header>dotnet</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<ul>
+					<li>li 1</li>
+					<li>li 2</li>
+					<li>li 3</li>
+					<li>li 4</li>
+					<li>li 5</li>
+				</ul>
+				<code>some code samples</code>
+		</section>
+
+		<section class="main-section" id="python">
+			<header>python</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<ul>
+					<li>li 1</li>
+					<li>li 2</li>
+					<li>li 3</li>
+					<li>li 4</li>
+					<li>li 5</li>
+				</ul>
+				<code>some code samples</code>
+		</section>
+	</main>
+</body>
+</html>
